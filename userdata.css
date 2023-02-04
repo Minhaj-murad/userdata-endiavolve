@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed';
+
+}
+
+.userdata-container {
+    padding: 25px;
+    background-color: #dcdcdd;
+}
+
+.user-data-right-side {
+    background-color: #f1f1f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.userdata-profie-images {
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.user-data-packages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-data-referrel-apply {
+    color: #fff;
+    font-weight: 500;
+    background-color: #3742fa;
+    border: none;
+    padding-inline: 8px;
+    padding-block: 2px;
+    border-radius: 5px;
+}
+
+.user-data-referrel-apply:hover {
+    color: #000000;
+    background-color: #ffa502;
+}
+
+.user-data-payment-button {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #3742fa;
+    border: none;
+    padding-inline: 12px;
+    padding-block: 5px;
+    border-radius: 5px;
+}
+
+.user-data-payment-button:hover {
+    color: #000000;
+    background-color: #ffa502;
+}
+
+@media screen and (max-width: 576px) {
+    .user-data-referrel-apply {
+        margin-top: 10px;
+    }
+
+    #user-data-referrel-area {
+        margin-top: 10px;
+    }
+    #userdata-packages{
+        margin-top: 10px;
+    }
+}
