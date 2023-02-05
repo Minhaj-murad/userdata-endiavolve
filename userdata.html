@@ -1,153 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./userdata.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
+
 <body>
     <div class="userdata-container">
-              
-                  <div class=" mb-3">
-                    <div class="">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Full Name</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                         Mohammad Minhaj Murad
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Email</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          Minhajmurad@gmail.com
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Mobile</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          (320) 380-4539
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Date of Birth</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          24th September, 1997
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Course</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          Course Name
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Branch</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          Branch Name
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Semester</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          Semester Name
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">University</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                         International Islamic University Chittagong
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Address</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                          Bay Area, San Francisco, CA
-                        </div>
-                      </div>
-                      <hr>
-                    
-                      <div class="row user-data-packages">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Subscribe</h6>
-                        </div>
-                        <div class="col-sm-9 userdata-user-info">
-                            <select id="userdata-packages" class="form-select" aria-label="Default select example">
-                                <option selected>Packages</option>
-                                <option value="1">1 Month 599/-Rs</option>
-                                <option value="2">3 Month 1499/-Rs</option>
-                                <option value="3">6 Month 2999/-Rs</option>
-                              </select>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3 ">
-                          <h6 class="mb-0">Referrel Code</h6>
-                        </div>
-                        <div class="col-sm-4 col-lg-3 userdata-user-info">
-                         <input name="" id="user-data-referrel-area" cols="25" rows="1" onkeyup="manage(this)"></textarea>
-                        </div>
-                        <div class="col-sm-4 userdata-user-info">
-                         <button class="user-data-referrel-apply " id="user-data-referrel-applybtn" > Apply </button>
-                        </div>
-                      </div>
+
+        <div class=" mb-3">
+            <div class="userdata-container-prev-info">
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Full Name</h6>
                     </div>
-                  </div>
-           
-                  <div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            I accept all terms and conditions.
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        Mohammad Minhaj Murad
+                    </div>
+                </div>
 
-                        </label>
-                      </div>
-                      <button class="user-data-payment-button"> Pay 2499/= </button>
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Email</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        Minhajmurad@gmail.com
+                    </div>
+                </div>
 
-                      
-                  </div>
-    
-                  
-    
-                
-              </div>
-    
-            
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Mobile</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        (320) 380-4539
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Date of Birth</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        24th September, 1997
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Course</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        Course Name
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Branch</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        Branch Name
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Semester</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        Semester Name
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">University</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        International Islamic University Chittagong
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-6 col-md-3">
+                        <h6 class="user-data-user-options">Address</h6>
+                    </div>
+                    <div class="col-lg-7 col-6 col-md-9 userdata-user-info">
+                        Bay Area, San Francisco, CA
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="user-data-packages">
+            <div class="user-data-packages-subscribe">
+                <h6 class="user-data-packages-subscribe-heading">Subscribe :</h6>
+            </div>
+            <div class="user-data-packages-options">
+                <select name="sources" id="sources" class="userdata-custom-select sources" placeholder="Packages">
+                    <option value="1st">1 Month 599/-Rs</option>
+                    <option value="2nd">3 Month 1499/-Rs</option>
+                    <option value="3rd">6 Month 2999/-Rs</option>
+                </select>
+            </div>
+        </div>
+
+        <div class=" userdata-referrence-section">
+            <div class="">
+                <h6 class="user-data-packages-subscribe-heading">Referrel Code :</h6>
+            </div>
+            <div class="user-data-input-referrel-section ">
+                <input id="user-data-input-referrel" type="text" class="" />
+                <button class="user-data-referrel-apply " id="user-data-referrel-applybtn"> Apply </button>
+
+
+            </div>
+        </div>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    I accept all terms and conditions.
+
+                </label>
+            </div>
+            <button class="user-data-payment-button" id="userdata-paybtn">Pay </button>
+
+
+        </div>
+
+    </div>
+
 
     <script>
-      
-    </script>
+        $(".userdata-custom-select").each(function () {
+            var classes = $(this).attr("class"),
+                id = $(this).attr("id"),
+                name = $(this).attr("name");
+            var template = '<div class="' + classes + '">';
+            template += '<span class="userdata-custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+            template += '<div class="userdata-custom-options">';
+            $(this).find("option").each(function () {
+                template += '<span class="userdata-custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+            });
+            template += '</div></div>';
 
+            $(this).wrap('<div class="userdata-custom-select-wrapper"></div>');
+            $(this).hide();
+            $(this).after(template);
+        });
+        $(".userdata-custom-option:first-of-type").hover(function () {
+            $(this).parents(".userdata-custom-options").addClass("option-hover");
+        }, function () {
+            $(this).parents(".userdata-custom-options").removeClass("option-hover");
+        });
+        $(".userdata-custom-select-trigger").on("click", function () {
+            $('html').one('click', function () {
+                $(".userdata-custom-select").removeClass("opened");
+            });
+            $(this).parents(".userdata-custom-select").toggleClass("opened");
+            event.stopPropagation();
+        });
+        $(".userdata-custom-option").on("click", function () {
+            $(this).parents(".userdata-custom-select-wrapper").find("select").val($(this).data("value"));
+            $(this).parents(".userdata-custom-options").find(".userdata-custom-option").removeClass("selection");
+            $(this).addClass("selection");
+            $(this).parents(".userdata-custom-select").removeClass("opened");
+            $(this).parents(".userdata-custom-select").find(".userdata-custom-select-trigger").text($(this).text());
+        });
+    </script>
 </body>
+
 </html>
