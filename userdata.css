@@ -37,12 +37,17 @@
     margin-inline: auto;
 }
 
+.user-data-prev-info-options{
+    border-bottom: 1px solid rgb(178, 165, 165);
+    padding-block: 10px;
+}
 
 .user-data-user-info {
     align-items: center;
 }
 
 .user-data-user-options {
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -57,7 +62,9 @@
 }
 
 #hrstyle1 {
-    border-top: 3px solid black;
+    border-top: 3px double black;
+    border-bottom: none;
+  
 }
 
 #userdata-packages {
@@ -89,8 +96,7 @@
     margin-left: -175px;
 }
 
-.userdata-custom-select {
-    margin-left: 60px;
+.userdata-custom-select {    margin-left: -45px;
 }
 
 .userdata-packages-options:hover {
@@ -105,9 +111,7 @@
     margin-bottom: 20px;
 }
 
-.user-data-referrel-area {
-    margin-left: 55px;
-}
+
 
 .user-data-referrel-apply {
     color: #fff;
@@ -134,10 +138,9 @@
 .user-data-payment-button {
     margin-top: 20px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     border: 1px solid #41464b;
-    padding-inline: 25px;
-    padding-block: 5px;
+   padding: 10px 30px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -153,14 +156,17 @@
     background-color: #3742fa;
 }
 
-#user-data-input-referrel {
-    width: 150px;
-    height: 45px;
-    margin-left: 90px;
-    border: 2px solid #3742fa;
+.user-data-input-referrel-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
-
-
+.user-data-input-group{
+    justify-content: center;
+}
+#user-data-input-field{
+    height: 45px;
+}
 @media screen and (max-width: 576px) {
 
     .userdata-container {
@@ -184,6 +190,17 @@
 
     #userdata-packages {
         margin-top: 10px;
+    }
+    .user-data-packages-subscribe-heading {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 0;
+    }
+    
+    .user-data-packages-referrence-heading {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 0;
     }
 }
 
