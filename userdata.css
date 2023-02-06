@@ -41,6 +41,10 @@
     border-bottom: 1px solid rgb(178, 165, 165);
     padding-block: 10px;
 }
+.user-data-prev-info-last-options{
+   
+    padding-block: 10px;
+}
 
 .user-data-user-info {
     align-items: center;
