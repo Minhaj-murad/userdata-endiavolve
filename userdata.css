@@ -27,7 +27,6 @@
     margin-inline: auto;
     padding: 25px;
     margin-top: 25px;
-
     border-radius: 10px;
 
 }
@@ -43,7 +42,6 @@
 }
 
 .user-data-prev-info-last-options {
-
     padding-block: 10px;
 }
 
@@ -56,9 +54,7 @@
     font-weight: 600;
 }
 
-.user-data-options {
-    font-size: 18px;
-}
+
 
 .userdata-user-info {
     color: #53585d;
@@ -76,8 +72,6 @@
     width: 200px;
 }
 
-
-
 .user-data-packages-options {
     text-align: center;
     justify-content: center;
@@ -87,27 +81,23 @@
 
 
 #user-data-packages-option{
-   
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
    width: 250px;
    margin-inline: auto;
 
 }
-select { -webkit-border-radius:25px; -moz-border-radius:25px; border-radius:25px; } select:hover { background-color:gren; } option:hover { background-color:yellow; } option { -webkit-border-radius:25px; -moz-border-radius:25px; border-radius:25px; color:blue; background-color:yellow; } 
+
 select option {
+    text-align: center;
+    color: #000000 !important;
+    font-size: 18px;
+    font-weight: 600;
    
-    color: #000000 !important;
-    font-size: 18px;
-    font-weight: 600;
   }
-  select:focus > option:hover {
-    color: #000000 !important;
-    background-color: #ffa502;
-    font-size: 18px;
-    font-weight: 600;
-  }
-.user-data-packages-subscribe {
-    align-items: center;
-}
+
 
 .user-data-packages-subscribe-heading {
     font-size: 18px;
@@ -123,10 +113,6 @@ select option {
 
 
 
-.userdata-packages-options:hover {
-    color: #000000;
-    background-color: #ffa502;
-}
 
 
 .userdata-referrence-section {
@@ -179,21 +165,17 @@ select option {
     background-color: #3742fa;
 }
 
-.user-data-input-referrel-section {
-    display: block;
-    justify-content: center;
-    align-items: center;
+
+
+.user-data-termsconditions{
+    text-decoration: none;
+    color: #3742fa;
 }
-
-.user-data-input-group {
-    justify-content: center;
+.user-data-termsconditions:hover{
+    text-decoration: none;
+    color: #3742fa;
+    font-weight: 600;
 }
-
-#user-data-input-field {
-    height: 45px;
-}
-
-
 
 
 @media screen and (max-width: 576px) {
@@ -235,116 +217,3 @@ select option {
 }
 
 
-
-/* CSS For Select Options */
-
-
-/** userdata-Custom Select **/
-
-
-.userdata-custom-select-wrapper select {
-    display: none;
-}
-
-.userdata-custom-select {
-    position: relative;
-    display: inline-block;
-}
-
-.userdata-custom-select-trigger {
-    position: relative;
-    display: block;
-    width: 250px;
-    height: 40px;
-    align-items: center;
-    padding-inline: 16px;
-    padding-block: 2px;
-    font-size: 18px;
-    font-weight: 300;
-    color: #000000;
-    border: 2px solid gray;
-    background: #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.userdata-custom-select-trigger:after {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 10px;
-    height: 10px;
-    top: 50%;
-    right: 25px;
-    margin-top: -3px;
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    transform: rotate(45deg) translateY(-50%);
-    transition: all .4s ease-in-out;
-    transform-origin: 50% 0;
-}
-
-.userdata-custom-select.opened .userdata-custom-select-trigger:after {
-    margin-top: 3px;
-    transform: rotate(-135deg) translateY(-50%);
-}
-
-.userdata-custom-options {
-    position: absolute;
-    display: block;
-    color: #000000;
-    top: 100%;
-    left: 0;
-    right: 0;
-    min-width: 100%;
-    margin: 15px 0;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    box-sizing: border-box;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, .07);
-    background: #ffffff;
-    transition: all .4s ease-in-out;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-15px);
-}
-
-.userdata-custom-select.opened .userdata-custom-options {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-    transform: translateY(0);
-}
-
-.option-hover:before {
-    background: #3742fa;
-}
-
-.userdata-custom-option {
-    position: relative;
-    display: block;
-    padding: 0 22px;
-    border-bottom: 1px solid #b5b5b5;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-    line-height: 47px;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-}
-
-.userdata-custom-option:first-of-type {
-    border-radius: 4px 4px 0 0;
-}
-
-.userdata-custom-option:last-of-type {
-    border-bottom: 0;
-    border-radius: 0 0 4px 4px;
-}
-
-.userdata-custom-option:hover {
-
-    background: #ffa502;
-}
